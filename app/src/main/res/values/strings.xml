@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Quiz</string>
+    <string name="question1">Q1: In Internet Terminlogy, what does WWW mean?</string>
+    <string name="please_write_your_answer">Please write your answer</string>
+    <string name="question2">Q2: Connecting Peopleis the tagline of ...</string>
+    <string name="question2answer1">LG</string>
+    <string name="question2answer2">Nokia</string>
+    <string name="question2answer3">Sony</string>
+    <string name="question2answer4">Samsung</string>
+    <string name="question3">Q3: What is the mascot of Linux Operating System?</string>
+    <string name="question4">Q4: Which of these are Web Browsers?</string>
+    <string name="question4answer1">Opera</string>
+    <string name="question4answer2">Firefox</string>
+    <string name="question4answer3">Chrome</string>
+    <string name="question4answer4">VLC</string>
+    <string name="question5">Q5: One KiloByte is how many Bytes?</string>
+    <string name="question5answer1">100</string>
+    <string name="question5answer2">1000</string>
+    <string name="question5answer3">8</string>
+    <string name="question5answer4">1024</string>
+    <string name="submit">Submit</string>
+</resources>
