@@ -121,7 +121,7 @@ public class MainActivity extends AppCompatActivity {
             text = "Please choose some answers!!";
         } else if (score == 5.0 && err.isEmpty()) {
             text = "Score: " + String.valueOf(score) + "/5.0\n";
-            text += "You answered correctly to all questions!\n BRAVO!!";
+            text += "You answered correctly to all questions!\nBRAVO!!";
 
         } else {
             if (!err.isEmpty()) {
