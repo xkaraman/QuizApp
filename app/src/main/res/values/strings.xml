@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">Quiz</string>
-    <string name="question1">Q1: In Internet Terminlogy, what does WWW mean?</string>
+    <string name="question1">Q1: In Internet Terminology, what does WWW mean?</string>
     <string name="please_write_your_answer">Please write your answer</string>
-    <string name="question2">Q2: Connecting Peopleis the tagline of ...</string>
+    <string name="question2">Q2: "Connecting People" is the tagline of </string>
     <string name="question2answer1">LG</string>
     <string name="question2answer2">Nokia</string>
     <string name="question2answer3">Sony</string>
