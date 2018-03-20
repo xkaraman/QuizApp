@@ -35,13 +35,11 @@ public class MainActivity extends AppCompatActivity {
         inputEditText = findViewById(R.id.editTextQuestion1);
         str = inputEditText.getText().toString();
 
-        if ( str.equalsIgnoreCase("world wide web")) {
+        if (str.equalsIgnoreCase("world wide web")) {
             score += 1;
-        }
-        else if (str.equalsIgnoreCase("")){
+        } else if (str.equalsIgnoreCase("")) {
             // Do nothing
-        }
-        else {
+        } else {
             err += "1 ";
         }
 
@@ -52,10 +50,9 @@ public class MainActivity extends AppCompatActivity {
         if (radioid != -1) {
             radioButton = findViewById(radioid);
             str = radioButton.getText().toString();
-            if (str.equalsIgnoreCase("Nokia")){
-                score +=1;
-            }
-            else {
+            if (str.equalsIgnoreCase("Nokia")) {
+                score += 1;
+            } else {
                 err += "2 ";
             }
         }
@@ -64,14 +61,11 @@ public class MainActivity extends AppCompatActivity {
         inputEditText = findViewById(R.id.editTextQuestion3);
         str = inputEditText.getText().toString();
 
-        if ( str.equalsIgnoreCase("penguin"))
-        {
+        if (str.equalsIgnoreCase("penguin")) {
             score += 1;
-        }
-        else if (str.equalsIgnoreCase("")){
+        } else if (str.equalsIgnoreCase("")) {
             // Do nothing
-        }
-        else {
+        } else {
             err += "3 ";
         }
 
@@ -80,33 +74,30 @@ public class MainActivity extends AppCompatActivity {
         if (checkBox.isChecked()) {
             score += .33;
             atLeastOne = true;
-        }
-        else
+        } else
             error = true;
 
         checkBox = findViewById(R.id.checkBoxFirefox);
         if (checkBox.isChecked()) {
             score += .33;
             atLeastOne = true;
-        }
-        else
+        } else
             error = true;
 
         checkBox = findViewById(R.id.checkBoxOpera);
         if (checkBox.isChecked()) {
             score += .34;
             atLeastOne = true;
-        }
-        else
+        } else
             error = true;
 
         checkBox = findViewById(R.id.checkBoxVlc);
         if (checkBox.isChecked()) {
-            error =  true;
+            error = true;
             atLeastOne = true;
         }
 
-        if (error && atLeastOne){
+        if (error && atLeastOne) {
             err += "4 ";
         }
 
@@ -116,10 +107,9 @@ public class MainActivity extends AppCompatActivity {
         if (radioid != -1) {
             radioButton = findViewById(radioid);
             str = radioButton.getText().toString();
-            if (str.equalsIgnoreCase("1024")){
-                score +=1;
-            }
-            else {
+            if (str.equalsIgnoreCase("1024")) {
+                score += 1;
+            } else {
                 err += "5 ";
             }
         }
@@ -127,20 +117,17 @@ public class MainActivity extends AppCompatActivity {
         // Show Results on Toast Message
         Context context = getApplicationContext();
         String text;
-        if  (score == 0 && err.isEmpty()){
+        if (score == 0 && err.isEmpty()) {
             text = "Please choose some answers!!";
-        }
-        else if (score == 5.0 && err.isEmpty()){
+        } else if (score == 5.0 && err.isEmpty()) {
             text = "Score: " + String.valueOf(score) + "/5.0\n";
             text += "You answered correctly to all questions!\n BRAVO!!";
 
-        }
-        else{
-            if (!err.isEmpty()){
+        } else {
+            if (!err.isEmpty()) {
                 err0 += err;
                 text = "Score: " + String.valueOf(score) + "/5.0\n" + err0;
-            }
-            else
+            } else
                 text = "Score: " + String.valueOf(score) + "/5.0";
 
         }
@@ -149,7 +136,6 @@ public class MainActivity extends AppCompatActivity {
 
         Toast toast = Toast.makeText(context, text, duration);
         toast.show();
-
 
 
     }
