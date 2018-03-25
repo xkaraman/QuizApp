@@ -22,14 +22,15 @@ public class MainActivity extends AppCompatActivity {
         RadioGroup radioGroup;
         RadioButton radioButton;
         CheckBox checkBox;
+        CheckBox checkBox1;
+        CheckBox checkBox2;
+        CheckBox checkBox3;
         EditText inputEditText;
         String str;
         String err0 = "Check your answer in Question/s: ";
         String err = "";
         int radioid;
         double score = 0;
-        boolean error = false;
-        boolean atLeastOne = false;
 
         // Question1
         inputEditText = findViewById(R.id.editTextQuestion1);
@@ -71,33 +72,13 @@ public class MainActivity extends AppCompatActivity {
 
         // Question 4
         checkBox = findViewById(R.id.checkBoxChrome);
-        if (checkBox.isChecked()) {
-            score += .33;
-            atLeastOne = true;
-        } else
-            error = true;
+        checkBox1 = findViewById(R.id.checkBoxFirefox);
+        checkBox2 = findViewById(R.id.checkBoxOpera);
+        checkBox3 = findViewById(R.id.checkBoxVlc);
 
-        checkBox = findViewById(R.id.checkBoxFirefox);
-        if (checkBox.isChecked()) {
-            score += .33;
-            atLeastOne = true;
-        } else
-            error = true;
-
-        checkBox = findViewById(R.id.checkBoxOpera);
-        if (checkBox.isChecked()) {
-            score += .34;
-            atLeastOne = true;
-        } else
-            error = true;
-
-        checkBox = findViewById(R.id.checkBoxVlc);
-        if (checkBox.isChecked()) {
-            error = true;
-            atLeastOne = true;
-        }
-
-        if (error && atLeastOne) {
+        if (checkBox.isChecked() && checkBox1.isChecked() && checkBox2.isChecked() && !checkBox3.isChecked()) {
+            score += 1;
+        } else {
             err += "4 ";
         }
 
